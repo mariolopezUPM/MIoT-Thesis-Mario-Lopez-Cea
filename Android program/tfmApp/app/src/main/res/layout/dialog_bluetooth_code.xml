@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialogCodeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduce the code displayed in the car's screen"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/codeDialogLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:gravity="bottom">
+
+
+            <EditText
+                android:id="@+id/dialogCodeEditText"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Enter code here"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/dialogCodeError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Code incorret: try again with the new one"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:visibility="invisible"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/dialogCodePositiveButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="OK"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="18dp"/>
+
+                <Button
+                    android:id="@+id/dialogCodeNegativeButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginLeft="18dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/codeDialogProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

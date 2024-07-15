@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TfmApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.TfmApp" parent="Base.Theme.TfmApp" />
+
+    <style name="error" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccentError</item> <!--apply the color you wat here -->
+        <item name="android:textSize">12dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,1 @@
+To run the program must be executed the "tfmMain.py" file with the file "dh_parameters.pen" in the same directory. In this file is defined the common values (p, g) for the diffie hellman key excahnge algorithm.
